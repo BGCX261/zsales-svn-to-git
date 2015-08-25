@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource>
+  <object class="wxPanel" name="BOOKPANEL">
+    <object class="wxStaticBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>书名：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>副标题：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>作者：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>ISBN：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>条形码：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>出版社：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxComboBox">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>出版时间：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxDatePickerCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>版次：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>定价：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <cols>2</cols>
+          <rows>9</rows>
+          <growablecols>1</growablecols>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+        </object>
+        <flag>wxLEFT|wxRIGHT|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxALL|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>库存：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE|wxTE_READONLY|wxNO_BORDER</style>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxLEFT|wxRIGHT|wxGROW</flag>
+      </object>
+      <label>书目：</label>
+    </object>
+  </object>
+  <object class="wxPanel" name="EMPLOYEEPANEL">
+    <object class="wxStaticBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>11</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>姓名：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>地区：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>职务：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>身份证号：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>手机：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>固定电话：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>SKYPE：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>EMAIL：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>Google帐号：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>QQ：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>MSN：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <growablecols>1</growablecols>
+        </object>
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+        <border>2</border>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxALL|wxGROW</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxALL|wxGROW</flag>
+        <border>2</border>
+      </object>
+      <label>员工信息：</label>
+    </object>
+  </object>
+  <object class="wxPanel" name="PERSONALPANEL">
+    <object class="wxStaticBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>12</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>姓名：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxEXPAND</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>就职于：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>地区：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>邮编：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>地址：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>EMAIL：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>QQ：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>Google帐号：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>SKYPE：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <growablecols>1</growablecols>
+        </object>
+        <flag>wxLEFT|wxRIGHT|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxALL|wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxALL|wxEXPAND</flag>
+      </object>
+      <label>个人客户信息：</label>
+    </object>
+  </object>
+  <object class="wxPanel" name="COMPANYPANEL">
+    <object class="wxStaticBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>7</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>名称：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>地区：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>地址：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>邮编：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>联系人：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxComboBox">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>联系电话：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>批发商：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>供应商：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <growablecols>1</growablecols>
+        </object>
+        <flag>wxLEFT|wxRIGHT|wxGROW</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxALL|wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxALL|wxEXPAND</flag>
+      </object>
+      <label>客户信息：</label>
+    </object>
+  </object>
+  <object class="wxPanel" name="BUYTOKENPANEL">
+    <object class="wxStaticBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>2</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>书目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>数目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>价格：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>供货商：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>日期：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxDatePickerCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <growablecols>1</growablecols>
+        </object>
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxALL|wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND</flag>
+      </object>
+      <label>进书单：</label>
+    </object>
+  </object>
+  <object class="wxPanel" name="TAKETOKENPANEL">
+    <object class="wxStaticBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>2</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>书目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>数目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>领取人：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>地区：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>日期：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxDatePickerCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <growablecols>1</growablecols>
+        </object>
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxALL|wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND</flag>
+      </object>
+      <label>领书单：</label>
+    </object>
+  </object>
+  <object class="wxPanel" name="FEEDBACKPANEL">
+    <object class="wxStaticBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>8</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>书目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>反馈：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>单价：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>批发：</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>数目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>员工：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>客户：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>日期：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxDatePickerCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <growablecols>1</growablecols>
+        </object>
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxALL|wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND</flag>
+      </object>
+      <label>反馈单</label>
+    </object>
+  </object>
+  <object class="wxPanel" name="SELLQUOTEPANEL">
+    <object class="wxStaticBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>2</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>书目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>地区：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>价格：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>批发：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>报价日期：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxDatePickerCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <growablecols>1</growablecols>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND</flag>
+      </object>
+      <label>销售报价：</label>
+    </object>
+  </object>
+  <object class="wxPanel" name="BUYQUOTEPANEL">
+    <object class="wxStaticBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>2</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>书目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>供货商：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>价格：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>批发：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>报价日期：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxDatePickerCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <growablecols>1</growablecols>
+        </object>
+        <flag>wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND</flag>
+      </object>
+      <label>供货报价：</label>
+    </object>
+  </object>
+  <object class="wxPanel" name="MONEYTOKENPANEL">
+    <object class="wxStaticBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>8</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>员工：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>地区：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>金额：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>出/纳：</label>
+            </object>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>日期：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxDatePickerCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <growablecols>1</growablecols>
+        </object>
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxALL|wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND</flag>
+      </object>
+      <label>现金出纳单：</label>
+    </object>
+  </object>
+  <object class="wxPanel" name="PRIVILEGEPANEL">
+    <object class="wxStaticBoxSizer">
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>8</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>关联交易：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>书目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>数目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>金额：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>日期：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxDatePickerCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <growablecols>1</growablecols>
+        </object>
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxALL|wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND</flag>
+      </object>
+      <label>返点记录单：</label>
+    </object>
+  </object>
+  <object class="wxPanel" name="REQUISITIONPANEL">
+    <object class="wxStaticBoxSizer">
+      <label>STATICBOXSIZER</label>
+      <orient>wxVERTICAL</orient>
+      <object class="sizeritem">
+        <object class="wxFlexGridSizer">
+          <cols>2</cols>
+          <rows>2</rows>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>书目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>数目：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>发货地区：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>收货地区：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxChoice">
+              <content/>
+            </object>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>进书单：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxTextCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>请求日期：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxDatePickerCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>发货日期：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxDatePickerCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxStaticText">
+              <label>签收日期：</label>
+            </object>
+            <flag>wxALIGN_RIGHT</flag>
+          </object>
+          <object class="sizeritem">
+            <object class="wxDatePickerCtrl"/>
+            <flag>wxGROW</flag>
+          </object>
+          <growablecols>1</growablecols>
+        </object>
+        <flag>wxLEFT|wxRIGHT|wxEXPAND</flag>
+      </object>
+      <object class="sizeritem">
+        <object class="wxStaticBoxSizer">
+          <label>备注：</label>
+          <orient>wxVERTICAL</orient>
+          <object class="sizeritem">
+            <object class="wxTextCtrl">
+              <style>wxTE_MULTILINE</style>
+            </object>
+            <option>1</option>
+            <flag>wxALL|wxEXPAND</flag>
+          </object>
+        </object>
+        <option>1</option>
+        <flag>wxEXPAND</flag>
+      </object>
+    </object>
+  </object>
+</resource>
